@@ -17,15 +17,18 @@ $ catkin build
 ```
 
 ## Running the bundle adjustment example
-To run the bundle adjustment example, first launch the visualization by running
+For now, the only example implemented is a simple bundle adjustment example
+where we wish to estimate robot poses and landmark positions, given relative
+position measurements between the poses and the landmarks. To run the bundle adjustment example, first launch the visualization by running
 the follwoing from the root of the workspace.
 ```bash
 source devel/setup.bash
-roslaunch ceres_ros_tutorial bundle_adjustment.launch
+roslaunch ceres_ros_tutorial bundle_adjustment_rviz.launch
 ```
 
 Then, in a separate terminal, launch the executable by navigating to the
-directory `devel/lib/ceres_ros_tutorial/` and running
+directory `devel/lib/ceres_ros_tutorial/` and run
 ```bash
 $ ./simple_ba_example
 ```
+The visualizer should show the initial guess and final result from Ceres.
