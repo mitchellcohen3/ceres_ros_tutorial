@@ -283,7 +283,7 @@ int main(int argc, char **argv)
     optimized_landmarks.push_back(optimized_landmark);
   }
 
-  ROS_INFO_STREAM("Publishing optimized values over RViz...")
+  ROS_INFO_STREAM("Publishing optimized values over RViz...");
   for (int i = 0; i < optimized_poses.size(); i++)
   {
     Eigen::Matrix3d attitude = optimized_poses[i].block<3, 3>(0, 0);
