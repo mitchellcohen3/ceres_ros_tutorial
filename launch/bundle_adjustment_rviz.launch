@@ -1,0 +1,3 @@
+<launch>
+    <node name="bundle_adjustment_rviz" pkg="rviz" type="rviz" output="log" args="-d $(find ceres_ros_tutorial)/launch/bundle_adjustment_rviz.rviz" />
+</launch>
